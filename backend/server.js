@@ -25,10 +25,10 @@ app.get("/api/orders/getkey", (req, res) => {
   res.status(200).json({ key: process.env.RAZORPAY_KEY_ID });
 });
 
-export const instance = new Razorpay({
-  key_id: process.env.RAZORPAY_KEY_ID,
-  key_secret: process.env.RAZORPAY_KEY_SECRET,
-});
+// export const instance = new Razorpay({
+//   key_id: process.env.RAZORPAY_KEY_ID,
+//   key_secret: process.env.RAZORPAY_KEY_SECRET,
+// });
 
 app.use("/api/products", productRoutes);
 app.use("/api/users", userRoutes);
