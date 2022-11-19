@@ -79,7 +79,7 @@ const App = () => {
               />
               <Route
                 path="/page/:pageNumber"
-                element={<HomeScreen keyword={keyword} />}
+                element={<HomeScreen keyword={keyword} exact />}
               />
               <Route path="/search/:keyword" element={<HomeScreen />} exact />
               <Route path="*" element={<NotFound />} />
