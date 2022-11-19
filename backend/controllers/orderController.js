@@ -155,9 +155,7 @@ export {
   addOrderItems,
   getOrderById,
   getMyOrders,
-  payOrder,
   updateOrderToPaid,
-  paymentVerification,
   getAllOrders,
   updateOrderToDeliver,
 };
