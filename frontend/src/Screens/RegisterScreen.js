@@ -9,7 +9,6 @@ import Loader from "../components/Loader";
 import Message from "../components/Message";
 
 const RegisterScreen = () => {
-  window.scroll(0, 0);
   const location = useLocation();
   const navigate = useNavigate();
 

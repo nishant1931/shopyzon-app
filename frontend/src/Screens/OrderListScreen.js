@@ -8,7 +8,6 @@ import Loader from "../components/Loader";
 import Message from "../components/Message";
 
 const OrderListScreen = () => {
-  window.scroll(0, 0);
   const dispatch = useDispatch();
 
   const navigate = useNavigate();

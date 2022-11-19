@@ -7,7 +7,6 @@ import CheckoutSteps from "../components/CheckoutSteps";
 import FormContainer from "../components/FormContainer";
 
 const PaymentScreen = () => {
-  window.scroll(0, 0);
   const dispatch = useDispatch();
   const navigate = useNavigate();
 

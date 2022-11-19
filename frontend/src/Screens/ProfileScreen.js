@@ -10,7 +10,6 @@ import Message from "../components/Message";
 import { USER_UPDATE_PROFILE_RESET } from "../constants/userConstants";
 
 const ProfileScreen = () => {
-  window.scroll(0, 0);
   const navigate = useNavigate();
 
   const dispatch = useDispatch();
@@ -138,7 +137,7 @@ const ProfileScreen = () => {
               </tr>
             </thead>
             <tbody>
-              {orders?.map((order) => (
+              {orders.map((order) => (
                 <tr key={order._id}>
                   <td>{order._id}</td>
                   <td>{order.createdAt.substring(0, 10)}</td>

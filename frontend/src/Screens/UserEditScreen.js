@@ -10,8 +10,6 @@ import Message from "../components/Message";
 import { USER_UPDATE_RESET } from "../constants/userConstants";
 
 const UserEditScreen = () => {
-  window.scroll(0, 0);
-
   const navigate = useNavigate();
 
   const params = useParams();

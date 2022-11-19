@@ -13,7 +13,6 @@ import Loader from "../components/Loader";
 import Message from "../components/Message";
 
 const LoginScreen = () => {
-  window.scroll(0, 0);
   const dispatch = useDispatch();
   const userLogin = useSelector((state) => state.userLogin);
   const { loading, error, userInfo } = userLogin;

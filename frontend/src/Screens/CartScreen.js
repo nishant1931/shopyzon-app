@@ -16,7 +16,6 @@ import { addToCart, removeFromCart } from "../actions/cartActions";
 import Message from "../components/Message";
 
 const CartScreen = () => {
-  window.scroll(0, 0);
   const location = useLocation();
   const params = useParams();
   const dispatch = useDispatch();

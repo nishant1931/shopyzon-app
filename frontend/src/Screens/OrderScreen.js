@@ -49,10 +49,10 @@ const OrderScreen = () => {
   } = orderDeliver;
 
   useEffect(() => {
-    if (!order || order._id !== orderId || successPay || successDeliver) {
+    if (!order || successPay || successDeliver || order._id !== orderId) {
       dispatch({ type: ORDER_PAY_RESET });
-      dispatch(getOrderDetails(orderId));
       dispatch({ type: ORDER_DELIVER_RESET });
+      dispatch(getOrderDetails(orderId));
     }
   }, [dispatch, order, orderId, successDeliver, successPay]);
 
