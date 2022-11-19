@@ -56,6 +56,6 @@ app.use(errorHandler);
 
 const PORT = process.env.PORT || 5000;
 
-app.listen(5000, () => {
+app.listen(PORT, () => {
   console.log(`SERVER STARTED in ${process.env.NODE_ENV} mode on PORT ${PORT}`);
 });
