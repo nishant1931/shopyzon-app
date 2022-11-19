@@ -8,7 +8,7 @@ import { errorHandler, notFound } from "./middlewares/errorMiddleware.js";
 import userRoutes from "./routes/userRoutes.js";
 import orderRoutes from "./routes/orderRoutes.js";
 import uploadRoutes from "./routes/uploadRoutes.js";
-import Razorpay from "razorpay";
+// import Razorpay from "razorpay";
 
 dotenv.config();
 
